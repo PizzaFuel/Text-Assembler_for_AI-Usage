@@ -166,7 +166,7 @@ if __name__ == "__main__":
     if os.path.exists(folder_path) and os.path.isdir(folder_path):
         desktop_path = os.path.join(os.path.expanduser('~'), 'Desktop')
         main_folder_name = os.path.basename(folder_path)
-        output_file_name = f"{main_folder_name}" # Feel free to edit this if needed
+        output_file_name = f"{main_folder_name}.txt" # Feel free to edit this if needed
         
         output_directory = input(f"Enter output directory or press Enter to use Desktop ({desktop_path}): ").strip()
         output_file_path = os.path.join(output_directory if output_directory else desktop_path, output_file_name)
